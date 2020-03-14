@@ -1,0 +1,28 @@
+{
+  "name": "electron-vuex",
+  "version": "1.0.0",
+  "description": "Share vuex state between main and renderer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ingameltd/electron-vuex.git"
+  },
+  "keywords": [
+    "vuex",
+    "electron",
+    "shared"
+  ],
+  "author": "Kasun Vithanage",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ingameltd/electron-vuex/issues"
+  },
+  "homepage": "https://github.com/ingameltd/electron-vuex#readme",
+  "devDependencies": {
+    "jest": "^25.1.0",
+    "typescript": "^3.8.3"
+  }
+}
