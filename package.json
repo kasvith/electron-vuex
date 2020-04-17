@@ -4,7 +4,11 @@
   "description": "Share vuex state between main and renderer",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepublish": "npm run build",
+    "build": "tsc",
+    "build:check": "tsc --noEmit",
+    "watch": "tsc --watch",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -22,7 +26,13 @@
   },
   "homepage": "https://github.com/ingameltd/electron-vuex#readme",
   "devDependencies": {
+    "@types/node": "^13.9.1",
     "jest": "^25.1.0",
-    "typescript": "^3.8.3"
+    "electron": "^2.0.8"
+  },
+  "dependencies": {
+    "deepmerge": "^4.2.2",
+    "vue": "^2.6.11",
+    "vuex": "^3.1.3"
   }
 }
