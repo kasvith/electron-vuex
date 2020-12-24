@@ -1,7 +1,4 @@
-import createSharedMutations from "./createSharedMutations";
-import createSharedState from "./createSharedState";
+import createSharedMutations from "./createSharedMutations"
+import createSharedState from "./createSharedState"
 
-export {
-    createSharedMutations,
-    createSharedState
-}
+export { createSharedMutations, createSharedState }
