@@ -14,7 +14,7 @@ The easiest way to share your Vuex Store between all processes (including main).
 
 - [Vue](https://github.com/vuejs/vue) v2.0+
 - [Vuex](https://github.com/vuejs/vuex) v2.0+
-- [Electron](https://github.com/electron/electron) v2.0+
+- [Electron](https://github.com/electron/electron) v7.2.4+
 
 ### Installation
 
