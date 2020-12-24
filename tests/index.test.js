@@ -1,3 +1,14 @@
+jest.mock(
+  "electron",
+  () => {
+    const mockIpc = {
+      on: jest.fn().mockReturnThis()
+    }
+    return { ipcMain: mockIpc, ipcRenderer: mockIpc }
+  },
+  { virtual: true }
+)
+
 import { createSharedState, createSharedMutations } from "../src"
 
 describe("createSharedState", () => {

@@ -1,5 +1,16 @@
 import { createStore } from "./helpers"
 
+jest.mock(
+  "electron",
+  () => {
+    const mockIpc = {
+      on: jest.fn().mockReturnThis()
+    }
+    return { ipcMain: mockIpc, ipcRenderer: mockIpc }
+  },
+  { virtual: true }
+)
+
 const ipcMain = {
   on: () => {}
 }
