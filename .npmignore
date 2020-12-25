@@ -1,5 +1,6 @@
 !dist
-src
+!src
 tsconfig.json
 .github
 docs
+coverage

@@ -2,14 +2,14 @@
   "name": "electron-vuex",
   "version": "1.0.0",
   "description": "Share vuex state between main and renderer",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "prebuild": "rm -rf dist && mkdir dist",
-    "build": "babel src -d dist --env-name production",
+    "build": "babel src -d dist",
     "watch": "babel src -d dist --watch",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "test": "npm run lint && jest && bundlesize"
+    "test": "jest"
   },
   "jest": {
     "collectCoverage": true,
@@ -17,12 +17,6 @@
       "src/**/*.js"
     ]
   },
-  "bundlesize": [
-    {
-      "path": "./dist/**/*.js",
-      "maxSize": "2 kB"
-    }
-  ],
   "devDependencies": {
     "@babel/cli": "^7.0.0",
     "@babel/core": "^7.0.0",
@@ -31,8 +25,6 @@
     "babel-eslint": "^9.0.0",
     "babel-jest": "^26.6.3",
     "babel-plugin-add-module-exports": "^0.2.1",
-    "babel-preset-minify": "^0.4.3",
-    "bundlesize": "^0.17.0",
     "electron": "^7.2.4",
     "eslint": "^5.5.0",
     "eslint-config-prettier": "^3.0.1",
@@ -49,17 +41,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ingameltd/electron-vuex.git"
+    "url": "git+https://github.com/kasvith/electron-vuex.git"
   },
   "keywords": [
     "vuex",
     "electron",
-    "shared"
+    "shared",
+    "shared state"
   ],
   "author": "Kasun Vithanage",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ingameltd/electron-vuex/issues"
+    "url": "https://github.com/kasvith/electron-vuex/issues"
   },
-  "homepage": "https://github.com/ingameltd/electron-vuex#readme"
+  "homepage": "https://github.com/kasvith/electron-vuex#readme"
 }
