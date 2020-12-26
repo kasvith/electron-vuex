@@ -1,5 +1,5 @@
 {
-  "name": "electron-vuex",
+  "name": "@kasvith/electron-vuex",
   "version": "1.0.0",
   "description": "Share vuex state between main and renderer",
   "main": "dist/index.js",
@@ -16,6 +16,9 @@
     "collectCoverageFrom": [
       "src/**/*.js"
     ]
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "devDependencies": {
     "@babel/cli": "^7.0.0",

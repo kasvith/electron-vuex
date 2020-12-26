@@ -5,31 +5,31 @@ We replaced the JSON store with a memory store which allows high rate of mutatio
 
 The easiest way to share your Vuex Store between all processes (including main).
 
-### Features
+## Features
 
 :star: Persisted state  
 :star: Shared mutations
 
-### Requirements
+## Requirements
 
 - [Vue](https://github.com/vuejs/vue) v2.0+
 - [Vuex](https://github.com/vuejs/vuex) v2.0+
 - [Electron](https://github.com/electron/electron) v7.2.4+
 
-### Installation
+## Installation
 
 Installation of the Vuex Electron easy as 1-2-3.
 
 1. Install package with using of [yarn](https://github.com/yarnpkg/yarn) or [npm](https://github.com/npm/cli):
 
-    ```
-    yarn install electron-vuex
+    ```bash
+    yarn install @kasvith/electron-vuex
     ```
 
     or
 
-    ```
-    npm install electron-vuex
+    ```bash
+    npm install @kasvith/electron-vuex
     ```
 
 2. Include plugins in your Vuex store::
@@ -38,7 +38,7 @@ Installation of the Vuex Electron easy as 1-2-3.
     import Vue from "vue"
     import Vuex from "vuex"
 
-    import { createPersistedState, createSharedMutations } from "electron-vuex"
+    import { createPersistedState, createSharedMutations } from "@kasvith/electron-vuex"
 
     Vue.use(Vuex)
 
@@ -66,7 +66,7 @@ Installation of the Vuex Electron easy as 1-2-3.
 
 In renderer process to call actions you need to use `dispatch` or `mapActions`. Don't use `commit` because actions fired via `commit` will not be shared between processes.
 
-### Options
+## Options
 
 Available options for `createPersistedState()`
 
